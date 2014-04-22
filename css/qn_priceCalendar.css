@@ -1,0 +1,46 @@
+.calendar-title{
+	text-align: center;
+}
+#pre,#next{
+	cursor: pointer;
+	top: 5px;
+}
+
+#pre{
+	left: 5px;
+	background-position: 0 0;
+}
+#next{
+	right: 5px;
+	background-position: right 0;
+}
+.arrow{
+	position:absolute; 
+	width:8px; 
+	height:13px; 
+	cursor:pointer; 
+	overflow:hidden; 
+	text-indent:-99999px; 
+	background:#FFF url(arrow.png) 0 0 no-repeat;
+}
+.inActive{
+	color: gray;
+}
+.inActive:hover{
+	cursor: not-allowed !important;
+}
+#priceCalendar{position: absolute;background: #fff;border: 1px solid rgb(221, 221, 221);
+box-shadow: rgb(221, 221, 221) 1px 1px 1px;}
+
+.priceCalendar .dateInfo{height: 14px;}
+.priceCalendar .dateInfo div{margin-bottom: 5px;}
+
+.priceCalendar {border: 1px solid #ddd;border-bottom: none;border-right: none}
+.priceCalendar th{background:#3775c0; color: #fff}
+.priceCalendar td,.priceCalendar th { width: 60px;height: 26px;line-height: 26px;text-align: center;border-right: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+
+.priceCalendar .date{background: #f0f0f0;border-bottom: 1px solid #ddd}
+.priceCalendar .food{border-bottom: 1px solid #ddd;font-size: 12px}
+.priceCalendar .price{ line-height: 13px;padding-top: 5px;color:#3775c0}
+.priceCalendar .food { line-height: 13px;padding-bottom: 5px;color: grey}
+.priceCalendar td.clickable:hover{background: #f0f0f0;cursor: pointer}

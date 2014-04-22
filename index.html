@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/qn_priceCalendar.css">
+</head>
+<body>
+	<input id="myCalendar"></input>
+	<script src="jquery.js"></script>
+	<script src="mockdata.js"></script>
+	<script src="qn_priceCalendar.js"></script>
+	<script>
+	var tt=$("#myCalendar").qn_priceCalendar({
+		date:new Date(list[0].date),
+		dateInfoList:list,
+		css:{
+			top:$("#myCalendar").position().top+25,
+			left:$("#myCalendar").position().left
+		},
+		minDate:list[0].date,
+		maxDate:list[list.length-1].date,
+		dateSelected:function(date){console.log(date);console.log(this);}
+	});
+	// var tt=$.fn.qn_priceCanlendar();
+	// tt.showCalendar();
+	function triggerAlert(){
+		tt.trigger('click','#next');
+		tt.find('#next').click();
+	}
+	</script>
+</body>
+</html>
